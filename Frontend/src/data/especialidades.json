@@ -1,0 +1,64 @@
+{
+  "especialidades": [
+    {
+      "id": 1,
+      "name": "Odontología General",
+      "description": "Atención integral para diagnóstico, prevención y tratamiento de problemas dentales comunes como limpiezas, empastes y revisiones.",
+      "state": "active"
+    },
+    {
+      "id": 2,
+      "name": "Endodoncia",
+      "description": "Tratamiento del interior del diente para eliminar infecciones y salvar piezas dentales dañadas.",
+      "state": "inactive"
+    },
+    {
+      "id": 3,
+      "name": "Ortodoncia",
+      "description": "Corrección de la alineación dental y problemas de mordida con brackets o alineadores transparentes.",
+      "state": "active"
+    },
+    {
+      "id": 4,
+      "name": "Periodoncia",
+      "description": "Prevención, diagnóstico y tratamiento de enfermedades de las encías y tejidos de soporte dental.",
+      "state": "active"
+    },
+    {
+      "id": 5,
+      "name": "Odontopediatría",
+      "description": "Cuidado dental especializado en niños y adolescentes, con un enfoque preventivo y educativo.",
+      "state": "active"
+    },
+    {
+      "id": 6,
+      "name": "Implantología",
+      "description": "Colocación de implantes dentales para reemplazar piezas ausentes y recuperar la función masticatoria.",
+      "state": "active"
+    },
+    {
+      "id": 7,
+      "name": "Cirugía Oral y Maxilofacial",
+      "description": "Extracciones complejas, cirugía de terceros molares y tratamientos quirúrgicos de huesos faciales.",
+      "state": "active"
+    },
+    {
+      "id": 8,
+      "name": "Estética Dental",
+      "description": "Tratamientos de blanqueamiento, carillas y diseño de sonrisa para mejorar la estética dental.",
+      "state": "active"
+    },
+    {
+      "id": 9,
+      "name": "Rehabilitación Oral",
+      "description": "Restauración de dientes dañados mediante coronas, prótesis y tratamientos restaurativos avanzados.",
+      "state": "active"
+    },
+    {
+      "id": 10,
+      "name": "Odontología Preventiva",
+      "description": "Medidas para evitar la aparición de caries y enfermedades bucales: fluorizaciones, selladores y controles periódicos.",
+      "state": "active"
+    }
+  ]
+}

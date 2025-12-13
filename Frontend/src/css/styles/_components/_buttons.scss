@@ -1,0 +1,165 @@
+/* ========================================
+   BOTONES
+   ========================================
+   Estilos para botones primarios, secundarios y de acción
+   ======================================== */
+
+.primary-btn,
+.secondary-btn,
+.dialog-btn {
+  padding: 10px var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all var(--transition-fast);
+}
+
+.primary-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+}
+
+.primary-btn:hover {
+  background: #5568d3;
+}
+
+.primary-btn:disabled {
+  background: var(--gray-300);
+  color: var(--gray-500);
+}
+
+.secondary-btn {
+  padding: 10px var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--error-color);
+  color: var(--error-color);
+  background-color: var(--bg-primary);
+}
+
+.secondary-btn:hover {
+  background: var(--error-light);
+}
+
+/* Botones de acción en tablas */
+.action-buttons {
+  display: flex;
+  gap: var(--spacing-xs);
+  justify-content: center;
+}
+
+.action-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.action-btn.view-btn {
+  background: var(--info-light);
+  color: var(--info-color);
+}
+
+.action-btn.view-btn:hover {
+  background: #bbdefb;
+  transform: scale(1.1);
+}
+
+.action-btn.edit-btn {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.body--dark .action-btn.edit-btn {
+  background: #2e1e3a;
+  color: #d8b4fe;
+}
+
+.action-btn.edit-btn:hover {
+  background: #e1bee7;
+  transform: scale(1.1);
+}
+
+.action-btn.delete-btn {
+  background: var(--error-light);
+  color: var(--error-dark);
+}
+
+.action-btn.delete-btn:hover {
+  background: #ffcdd2;
+  transform: scale(1.1);
+}
+
+/* Botones de formulario */
+.back-btn {
+  color: var(--text-secondary);
+  padding: 12px var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border-light);
+  background: var(--bg-primary);
+  transition: all var(--transition-normal);
+}
+
+.back-btn:hover {
+  border-color: var(--gray-600);
+  background: var(--bg-secondary);
+}
+
+.next-btn,
+.confirm-btn {
+  min-width: 140px;
+  padding: 12px var(--spacing-lg);
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color-dark) 100%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all var(--transition-normal);
+}
+
+.next-btn:hover,
+.confirm-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.15);
+}
+
+/* Botón flotante */
+.floating-button-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.floating-button {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color-dark) 100%);
+  border: none;
+}
+
+.floating-button:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 8px 24px rgba(25, 118, 210, 0.4);
+}
+
+.floating-button:active {
+  transform: scale(0.95);
+}
+
+.floating-button .q-icon {
+  font-size: 28px;
+  color: white;
+}
+
+.body--dark .floating-button {
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.4);
+}
+
+.body--dark .floating-button:hover {
+  box-shadow: 0 8px 24px rgba(25, 118, 210, 0.6);
+}
+

@@ -1,0 +1,323 @@
+/* ========================================
+   FOOTER PROFESIONAL - KIRU ODONTOLOGÍA
+   ======================================== */
+
+.footer-profesional {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+  border-top: 4px solid var(--primary-orange) !important;
+}
+
+.footer-main {
+  padding: 48px 24px 32px 24px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Branding Section */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.brand-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.brand-tagline {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all var(--transition-normal);
+  
+  &:hover {
+    background: var(--primary-orange) !important;
+    border-color: var(--primary-orange);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  }
+}
+
+/* Section Titles */
+.section-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  position: relative;
+  padding-bottom: 8px;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-orange);
+    border-radius: 2px;
+  }
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  
+  &::before {
+    content: '▶';
+    font-size: 8px;
+    margin-right: 8px;
+    opacity: 0;
+    transition: all var(--transition-fast);
+    color: var(--primary-orange);
+  }
+  
+  &:hover {
+    color: white;
+    transform: translateX(8px);
+    
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  transition: all var(--transition-fast);
+  
+  .q-icon {
+    color: var(--primary-orange);
+    transition: all var(--transition-fast);
+  }
+  
+  &:hover {
+    color: white;
+    transform: translateX(4px);
+    
+    .q-icon {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  margin-top: 16px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+  border-radius: 25px !important;
+  font-weight: 600;
+  text-transform: none;
+  padding: 8px 20px;
+  transition: all var(--transition-normal);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  }
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 0 !important;
+}
+
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.copyright-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.legal-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legal-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 13px;
+  transition: all var(--transition-fast);
+  
+  &:hover {
+    color: var(--primary-orange);
+  }
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .footer-section:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    padding: 32px 20px 24px 20px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .copyright-content {
+    text-align: center;
+  }
+  
+  .legal-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .separator {
+    display: none;
+  }
+  
+  .brand-logo {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer-description {
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-main {
+    padding: 24px 16px 20px 16px;
+  }
+  
+  .footer-content {
+    gap: 20px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+  }
+  
+  .footer-link, 
+  .contact-item {
+    font-size: 13px;
+  }
+  
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+/* Animaciones adicionales */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-main > * {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.footer-section:nth-child(1) { animation-delay: 0.1s; }
+.footer-section:nth-child(2) { animation-delay: 0.2s; }
+.footer-section:nth-child(3) { animation-delay: 0.3s; }
+.footer-section:nth-child(4) { animation-delay: 0.4s; }

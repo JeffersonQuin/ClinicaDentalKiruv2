@@ -1,0 +1,37 @@
+{
+  "sucursales": [
+    {
+      "id": 1,
+      "nombre": "Sucursal Centro",
+      "ubicacion": "Oruro",
+      "direccion": "Av. 6 de Agosto #123, Centro, Oruro",
+      "descripcion": "Nuestra sucursal principal ubicada en el corazón de la ciudad, con atención personalizada y equipos de última generación.",
+      "imagen": "../icons/prueba.jpeg",
+      "latitud": -17.9758,
+      "longitud": -67.1101,
+      "activo": true
+    },
+    {
+      "id": 2,
+      "nombre": "Sucursal Norte",
+      "ubicacion": "Oruro",
+      "direccion": "Av. Circunvalación #456, Zona Norte, Oruro",
+      "descripcion": "Sucursal moderna en zona residencial, especializada en tratamientos familiares y odontopediatría.",
+      "imagen": "../icons/prueba.jpeg",
+      "latitud": -17.9658,
+      "longitud": -67.1001,
+      "activo": true
+    },
+    {
+      "id": 3,
+      "nombre": "Sucursal Sur",
+      "ubicacion": "Oruro",
+      "direccion": "Calle La Paz #789, Zona Sur, Oruro",
+      "descripcion": "Clínica acogedora en zona tranquila, ideal para pacientes que buscan comodidad y tranquilidad durante sus tratamientos.",
+      "imagen": "../icons/prueba.jpeg",
+      "latitud": -17.9858,
+      "longitud": -67.1201,
+      "activo": true
+    }
+  ]
+}

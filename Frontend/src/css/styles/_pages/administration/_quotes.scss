@@ -1,0 +1,900 @@
+// Variables de color naranja
+$quotes-primary: #FF6B35;
+$quotes-primary-dark: #FF5722;
+$quotes-secondary: #FF8A65;
+$quotes-accent: #FFAB91;
+$quotes-success: #4CAF50;
+$quotes-warning: #FF9800;
+$quotes-danger: #F44336;
+$quotes-info: #2196F3;
+
+// Modo claro
+$quotes-bg-light: #ffffff;
+$quotes-bg-light-alt: #FFF8F6;
+$quotes-text-light: #4A3428;
+$quotes-text-light-secondary: #8D6E63;
+$quotes-border-light: #FFCCBC;
+$quotes-success-dark: #1e7d32; 
+$quotes-info-dark: #0f6674;    
+$quotes-warning-dark: #b38600; 
+$quotes-danger-dark: #b02a37; 
+
+// Modo oscuro
+$quotes-bg-dark: #2C1810;
+$quotes-bg-dark-alt: #422618;
+$quotes-text-dark: #FFE0B2;
+$quotes-text-dark-secondary: #BCAAA4;
+$quotes-border-dark: #8D6E63;
+
+// Mixins para dark mode
+@mixin quotes-dark-mode {
+  body.body--dark & {
+    @content;
+  }
+}
+
+// Page Container
+.quotes-page-container {
+  min-height: 100vh;
+  background: $quotes-bg-light-alt;
+  padding: 2rem;
+  
+  @include quotes-dark-mode {
+    background: $quotes-bg-dark;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+// Header Section
+.quotes-page-header {
+  position: relative;
+  background: linear-gradient(135deg, $quotes-primary 0%, $quotes-primary-dark 100%);
+  border-radius: 24px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba($quotes-primary, 0.4);
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+}
+
+.quotes-header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.quotes-header-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  animation: quotes-float 15s ease-in-out infinite;
+}
+
+.quotes-header-shape-1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  right: -50px;
+}
+
+.quotes-header-shape-2 {
+  width: 200px;
+  height: 200px;
+  bottom: -50px;
+  left: -50px;
+  animation-delay: 7s;
+}
+
+@keyframes quotes-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.quotes-header-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.quotes-title-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+}
+
+.quotes-icon-wrapper {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+  }
+}
+
+.quotes-header-icon {
+  font-size: 2rem;
+  color: white;
+  
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+}
+
+.quotes-page-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: white;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.5px;
+  
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+}
+
+.quotes-page-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+}
+
+.quotes-primary-btn {
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba($quotes-primary-dark, 0.3);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba($quotes-primary-dark, 0.4);
+  }
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+// Stats Section
+.quotes-stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.quotes-stat-card {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  box-shadow: 0 4px 16px rgba($quotes-primary, 0.1);
+  border: 1px solid $quotes-border-light;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  
+  @include quotes-dark-mode {
+    background: $quotes-bg-dark-alt;
+    border-color: $quotes-border-dark;
+  }
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba($quotes-primary, 0.2);
+  }
+}
+
+.quotes-stat-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+  &.total { background: radial-gradient(circle, rgba($quotes-primary, 0.1), transparent 70%); }
+  &.today { background: radial-gradient(circle, rgba($quotes-success, 0.1), transparent 70%); }
+  &.upcoming { background: radial-gradient(circle, rgba($quotes-info, 0.1), transparent 70%); }
+  &.completed { background: radial-gradient(circle, rgba($quotes-warning, 0.1), transparent 70%); }
+  
+  .quotes-stat-card:hover & {
+    opacity: 1;
+  }
+}
+
+.quotes-stat-icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: white;
+  position: relative;
+  z-index: 1;
+  
+  &.total {
+    background: linear-gradient(135deg, $quotes-primary, $quotes-primary-dark);
+    box-shadow: 0 4px 12px rgba($quotes-primary, 0.3);
+  }
+  
+  &.today {
+    background: linear-gradient(135deg, $quotes-success, $quotes-success-dark);
+    box-shadow: 0 4px 12px rgba($quotes-success, 0.3);
+  }
+  
+  &.upcoming {
+    background: linear-gradient(135deg, $quotes-info, $quotes-info-dark);
+    box-shadow: 0 4px 12px rgba($quotes-info, 0.3);
+  }
+  
+  &.completed {
+    background: linear-gradient(135deg, $quotes-warning, $quotes-warning-dark);
+    box-shadow: 0 4px 12px rgba($quotes-warning, 0.3);
+  }
+}
+
+
+
+.quotes-stat-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.quotes-stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+  
+  .total & { 
+    background: linear-gradient(135deg, $quotes-primary, $quotes-primary-dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .today & { color: $quotes-success; }
+  .upcoming & { color: $quotes-info; }
+  .completed & { color: $quotes-warning; }
+}
+
+.quotes-stat-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $quotes-text-light-secondary;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark-secondary;
+  }
+}
+
+// Search Section
+.quotes-search-section {
+  margin-bottom: 2rem;
+}
+
+.quotes-search-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quotes-search-input {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba($quotes-primary, 0.1);
+  transition: all 0.3s ease;
+  
+  @include quotes-dark-mode {
+    background: $quotes-bg-dark-alt;
+  }
+  
+  &:hover, &:focus-within {
+    box-shadow: 0 6px 24px rgba($quotes-primary, 0.2);
+  }
+  
+  :deep(.q-field__control) {
+    border-radius: 16px;
+    padding: 0 20px;
+    height: 56px;
+  }
+  
+  :deep(.q-field__prepend) {
+    padding-right: 12px;
+  }
+}
+
+.quotes-search-icon {
+  color: $quotes-primary;
+  font-size: 1.25rem;
+}
+
+// Table Container
+.quotes-table-container {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba($quotes-primary, 0.1);
+  border: 1px solid $quotes-border-light;
+  
+  @include quotes-dark-mode {
+    background: $quotes-bg-dark-alt;
+    border-color: $quotes-border-dark;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+}
+
+.quotes-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.quotes-table-title-section {
+  flex: 1;
+}
+
+.quotes-table-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $quotes-text-light;
+  margin: 0 0 0.5rem 0;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark;
+  }
+}
+
+.quotes-table-underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, $quotes-primary, $quotes-primary-dark);
+  border-radius: 2px;
+}
+
+.quotes-results-count {
+  display: flex;
+  align-items: center;
+}
+
+.quotes-count-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba($quotes-primary, 0.1);
+  color: $quotes-primary;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  
+  @include quotes-dark-mode {
+    background: rgba($quotes-primary, 0.2);
+    color: $quotes-secondary;
+  }
+}
+
+// Table Styles
+.quotes-data-table {
+  :deep(.q-table__top) {
+    padding: 0;
+  }
+  
+  :deep(.q-table__control) {
+    min-height: auto;
+  }
+  
+  :deep(.q-table thead tr) {
+    background: rgba($quotes-primary, 0.05);
+    
+    @include quotes-dark-mode {
+      background: rgba($quotes-primary, 0.1);
+    }
+  }
+  
+  :deep(.q-table th) {
+    font-weight: 700;
+    color: $quotes-text-light;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    @include quotes-dark-mode {
+      color: $quotes-text-dark;
+    }
+  }
+  
+  :deep(.q-table tbody tr) {
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: rgba($quotes-primary, 0.05) !important;
+      
+      @include quotes-dark-mode {
+        background: rgba($quotes-primary, 0.1) !important;
+      }
+    }
+  }
+  
+  :deep(.q-table td) {
+    border-bottom: 1px solid $quotes-border-light;
+    
+    @include quotes-dark-mode {
+      border-bottom-color: $quotes-border-dark;
+    }
+  }
+}
+
+// Subject Info
+.quotes-subject-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.quotes-subject-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba($quotes-primary, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: $quotes-primary;
+  flex-shrink: 0;
+  
+  @include quotes-dark-mode {
+    background: rgba($quotes-primary, 0.2);
+  }
+}
+
+.quotes-subject-content {
+  flex: 1;
+}
+
+.quotes-subject-label {
+  font-size: 0.75rem;
+  color: $quotes-text-light-secondary;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark-secondary;
+  }
+}
+
+.quotes-subject-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $quotes-text-light;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark;
+  }
+}
+
+// Dentist & Patient Info
+.quotes-dentist-info,
+.quotes-patient-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.quotes-dentist-avatar,
+.quotes-patient-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.quotes-dentist-avatar {
+  background: linear-gradient(135deg, $quotes-info, $quotes-info-dark);
+}
+
+.quotes-patient-avatar {
+  background: linear-gradient(135deg, $quotes-success, $quotes-success-dark);
+}
+
+.quotes-dentist-content,
+.quotes-patient-content {
+  flex: 1;
+}
+
+.quotes-dentist-name,
+.quotes-patient-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $quotes-text-light;
+  margin-bottom: 2px;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark;
+  }
+}
+
+.quotes-dentist-role,
+.quotes-patient-role {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: $quotes-text-light-secondary;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark-secondary;
+  }
+  
+  i {
+    font-size: 0.7rem;
+  }
+}
+
+// Date & Time Info
+.quotes-date-info,
+.quotes-time-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.quotes-date-icon,
+.quotes-time-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba($quotes-warning, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: $quotes-warning;
+  flex-shrink: 0;
+  
+  @include quotes-dark-mode {
+    background: rgba($quotes-warning, 0.2);
+  }
+}
+
+.quotes-time-icon {
+  background: rgba($quotes-info, 0.1);
+  color: $quotes-info;
+  
+  @include quotes-dark-mode {
+    background: rgba($quotes-info, 0.2);
+  }
+}
+
+.quotes-date-content,
+.quotes-time-content {
+  flex: 1;
+}
+
+.quotes-date-label,
+.quotes-time-label {
+  font-size: 0.75rem;
+  color: $quotes-text-light-secondary;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark-secondary;
+  }
+}
+
+.quotes-date-value,
+.quotes-time-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $quotes-text-light;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark;
+  }
+}
+
+// Action Buttons
+.quotes-action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.quotes-action-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.quotes-view-btn:hover {
+  background: rgba($quotes-primary, 0.1) !important;
+}
+
+.quotes-edit-btn:hover {
+  background: rgba($quotes-primary, 0.1) !important;
+}
+
+.quotes-delete-btn:hover {
+  background: rgba($quotes-danger, 0.1) !important;
+}
+
+// No Data State
+.quotes-no-data-container {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.quotes-no-data-illustration {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
+}
+
+.quotes-no-data-icon {
+  font-size: 4rem;
+  color: $quotes-border-light;
+  position: relative;
+  z-index: 2;
+  
+  @include quotes-dark-mode {
+    color: $quotes-border-dark;
+  }
+}
+
+.quotes-no-data-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba($quotes-primary, 0.05);
+  animation: quotes-pulse 2s ease-in-out infinite;
+  
+  @include quotes-dark-mode {
+    background: rgba($quotes-primary, 0.1);
+  }
+}
+
+.quotes-no-data-circle-1 {
+  width: 80px;
+  height: 80px;
+  top: 20px;
+  left: 20px;
+  animation-delay: 0s;
+}
+
+.quotes-no-data-circle-2 {
+  width: 60px;
+  height: 60px;
+  top: 30px;
+  left: 30px;
+  animation-delay: 1s;
+}
+
+@keyframes quotes-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+.quotes-no-data-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $quotes-text-light;
+  margin-bottom: 0.5rem;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark;
+  }
+}
+
+.quotes-no-data-subtext {
+  font-size: 0.9rem;
+  color: $quotes-text-light-secondary;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark-secondary;
+  }
+}
+
+// Delete Confirmation Dialog
+.quotes-confirm-dialog {
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 90vw;
+  
+  @include quotes-dark-mode {
+    background: $quotes-bg-dark-alt;
+  }
+}
+
+.quotes-dialog-header {
+  text-align: center;
+  padding: 2rem 2rem 1rem;
+}
+
+.quotes-dialog-icon-container {
+  width: 80px;
+  height: 80px;
+  background: rgba($quotes-danger, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.quotes-dialog-icon {
+  font-size: 2.5rem;
+  color: $quotes-danger;
+}
+
+.quotes-dialog-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $quotes-text-light;
+  margin: 0;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark;
+  }
+}
+
+.quotes-dialog-text {
+  font-size: 1rem;
+  color: $quotes-text-light;
+  margin-bottom: 1.5rem;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark;
+  }
+}
+
+.quotes-dialog-details {
+  background: rgba($quotes-primary, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  
+  @include quotes-dark-mode {
+    background: rgba($quotes-primary, 0.1);
+  }
+}
+
+.quotes-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: $quotes-text-light;
+  margin-bottom: 0.5rem;
+  
+  @include quotes-dark-mode {
+    color: $quotes-text-dark;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  i {
+    color: $quotes-primary;
+    width: 16px;
+  }
+}
+
+.quotes-dialog-subtext {
+  font-size: 0.875rem;
+  color: $quotes-danger;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.quotes-dialog-actions {
+  padding: 1rem 2rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.quotes-dialog-btn {
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+
+.quotes-dialog-delete-btn {
+  background: $quotes-danger;
+  
+  &:hover {
+    background: $quotes-danger-dark;
+    transform: translateY(-2px);
+  }
+}

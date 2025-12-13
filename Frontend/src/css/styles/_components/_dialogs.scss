@@ -1,0 +1,566 @@
+/* ========================================
+   🎨 DIÁLOGOS Y MODALES - ESTILO ELEVADO
+   ========================================
+   Estilos modernos para diálogos y popups
+   con paleta #FF6B35
+   ======================================== */
+
+/* ========================================
+   DIÁLOGOS BASE
+   ======================================== */
+.new-dialog,
+.detail-dialog,
+.edit-dialog,
+.confirm-dialog {
+  min-width: 500px;
+  max-width: 800px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2xl);
+  border: 1px solid rgba(255, 107, 53, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.new-dialog {
+  min-width: 700px;
+  animation: slideInUp 0.4s ease-out;
+}
+
+.edit-dialog {
+  min-width: 600px;
+  max-width: 700px;
+  animation: slideInRight 0.4s ease-out;
+}
+
+.confirm-dialog {
+  min-width: 480px;
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* ========================================
+   ENCABEZADO DE DIÁLOGOS
+   ======================================== */
+.dialog-header {
+  background: linear-gradient(135deg,
+      #FF6B35 0%,
+      #FF8E53 50%,
+      #FF6B35 100%);
+  color: white;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.dialog-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+}
+
+.dialog-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.dialog-header .header-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.dialog-header .header-title i {
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.dialog-header .close-btn {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(4px);
+}
+
+.dialog-header .close-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotate(90deg);
+}
+
+/* ========================================
+   CONTENIDO DE DIÁLOGOS
+   ======================================== */
+.dialog-content {
+  padding: var(--spacing-xl);
+  max-height: 65vh;
+  overflow-y: auto;
+  background: var(--bg-primary);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 107, 53, 0.3) transparent;
+}
+
+.dialog-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dialog-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dialog-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 107, 53, 0.3);
+  border-radius: 20px;
+}
+
+.dialog-actions {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dialog-actions button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dialog-actions .primary-btn {
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.dialog-actions .primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+}
+
+/* ========================================
+   DIÁLOGO DE CONFIRMACIÓN
+   ======================================== */
+.dialog-icon-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-lg);
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg,
+      rgba(255, 107, 53, 0.1) 0%,
+      rgba(255, 107, 53, 0.2) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+}
+
+.dialog-icon {
+  font-size: 36px;
+  background: linear-gradient(135deg, #FF6B35, #FF8E53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dialog-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-xs);
+  text-align: center;
+  background: linear-gradient(135deg, #FF6B35, #FF8E53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dialog-text {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0 0 var(--spacing-md);
+  text-align: center;
+  line-height: 1.6;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dialog-subtext {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========================================
+   MODALES ESPECÍFICOS
+   ======================================== */
+.appointment-modal,
+.login-modal {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 107, 53, 0.1);
+  overflow: hidden;
+}
+
+.body--dark .appointment-modal,
+.body--dark .login-modal {
+  background: linear-gradient(145deg, #2a2a2a 0%, #1f1f1f 100%) !important;
+  border-color: #404040 !important;
+}
+
+.appointment-header,
+.login-header {
+  padding: 28px 28px 20px;
+  border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+  color: white;
+}
+
+.body--dark .appointment-header,
+.body--dark .login-header {
+  border-bottom: 1px solid #404040 !important;
+}
+
+.appointment-content,
+.login-content {
+  padding: 28px;
+}
+
+/* ========================================
+   OPCIONES DE CITA
+   ======================================== */
+.appointment-options {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.appointment-option-btn {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 2px solid rgba(255, 107, 53, 0.2);
+  border-radius: 16px;
+  padding: 28px;
+  min-width: 170px;
+  min-height: 150px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.appointment-option-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF6B35, #FF8E53);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.body--dark .appointment-option-btn {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border-color: #404040 !important;
+}
+
+.appointment-option-btn:hover {
+  border-color: #FF6B35;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(255, 107, 53, 0.15);
+}
+
+.appointment-option-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.body--dark .appointment-option-btn:hover {
+  background: #333333 !important;
+  border-color: #FF6B35 !important;
+}
+
+.option-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.option-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 107, 53, 0.1);
+  transition: all 0.3s ease;
+}
+
+.body--dark .option-icon {
+  background: rgba(255, 107, 53, 0.2) !important;
+}
+
+.appointment-option-btn:hover .option-icon {
+  background: rgba(255, 107, 53, 0.2);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.option-icon i {
+  color: #FF6B35;
+  font-size: 24px;
+}
+
+.option-text {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+/* ========================================
+   SECCIÓN DE CANCELAR
+   ======================================== */
+.cancel-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.cancel-btn {
+  background: transparent;
+  color: #FF6B35;
+  border: 2px solid rgba(255, 107, 53, 0.3);
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cancel-btn:hover {
+  background: rgba(255, 107, 53, 0.1);
+  border-color: #FF6B35;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 107, 53, 0.1);
+}
+
+/* ========================================
+   MODAL DE LOGIN
+   ======================================== */
+.google-btn {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.body--dark .google-btn {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border-color: #404040 !important;
+}
+
+.google-btn:hover {
+  border-color: #FF6B35;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 107, 53, 0.1);
+}
+
+.google-btn .q-icon {
+  color: #FF6B35;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.separator-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      var(--border-color),
+      transparent);
+}
+
+.separator-text {
+  margin: 0 16px;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.email-input {
+  margin-bottom: 20px;
+}
+
+.continue-btn {
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  border: none;
+}
+
+.continue-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+}
+
+.login-footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.register-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FF6B35;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.register-link:hover {
+  color: #FF8E53;
+  text-decoration: underline;
+}
+
+.forgot-link {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.forgot-link:hover {
+  color: #FF6B35;
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+
+  .new-dialog,
+  .edit-dialog,
+  .confirm-dialog,
+  .detail-dialog {
+    min-width: 90vw !important;
+    max-width: 95vw !important;
+    margin: 16px;
+  }
+
+  .appointment-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appointment-option-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "citas": [
+    {
+      "id": 1,
+      "pacienteId": 1,           
+      "dentistaId": 1,           
+      "asunto": "Dolor de muela",
+      "fecha": "2025-10-16",
+      "hora": "15:30"
+    },
+    {
+      "id": 2,
+      "pacienteId": 2,
+      "dentistaId": 2,
+      "asunto": "Control anual",
+      "fecha": "2025-10-17",
+      "hora": "09:00"
+    },
+    {
+      "id": 3,
+      "pacienteId": 3,
+      "dentistaId": 1,
+      "asunto": "Ortodoncia",
+      "fecha": "2025-10-18",
+      "hora": "11:30"
+    }
+  ]
+}

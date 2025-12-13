@@ -1,0 +1,20 @@
+{
+  "dependientes": [
+    {
+      "id": 1,
+      "nombreCompleto": "Mario Martinez Quispe",
+      "genero": "Masculino",
+      "parentesco": "Hijo",
+      "telefono": "67343276",
+      "emailTitular": "Pedro@gmail.com"
+    },
+    {
+      "id": 2, 
+      "nombreCompleto": "Lucía López Fernández",
+      "genero": "Femenino",
+      "parentesco": "Hija",
+      "telefono": "67891234",
+      "emailTitular": "ana.lopez@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "anuncios": [
+    {
+      "id": 1,
+      "titulo": "Limpieza dental con 20% de descuento",
+      "descripcion": "Este mes ofrecemos un 20% de descuento en limpiezas dentales para nuevos pacientes.",
+      "categoria": "Promoción",
+      "fecha_publicacion": "2025-11-06",
+      "fecha_expiracion": "2025-11-30",
+      "userId": 101,
+      "imagen": "/images/limpieza_dental.jpg",
+      "estado": "activo"
+    },
+    {
+      "id": 2,
+      "titulo": "Revisión gratuita de ortodoncia",
+      "descripcion": "Agenda tu cita para una revisión gratuita de ortodoncia y conoce nuestras opciones de tratamiento.",
+      "categoria": "Promoción",
+      "fecha_publicacion": "2025-11-07",
+      "fecha_expiracion": "2025-12-07",
+      "userId": 101,
+      "imagen": "/images/revision_ortodoncia.jpg",
+      "estado": "activo"
+    },
+    {
+      "id": 3,
+      "titulo": "Taller de higiene bucal para niños",
+      "descripcion": "Ven con tus hijos al taller gratuito de higiene bucal este sábado en nuestra clínica.",
+      "categoria": "Evento",
+      "fecha_publicacion": "2025-11-08",
+      "fecha_expiracion": "2025-11-08",
+      "userId": 101,
+      "imagen": "/images/taller_infantil.jpg",
+      "estado": "activo"
+    },
+    {
+      "id": 4,
+      "titulo": "Recordatorio de cita",
+      "descripcion": "No olvides tu cita de revisión anual. Mantén tu sonrisa saludable.",
+      "categoria": "Aviso",
+      "fecha_publicacion": "2025-11-05",
+      "fecha_expiracion": "2025-11-15",
+      "userId": 101,
+      "imagen": "/images/recordatorio_cita.jpg",
+      "estado": "activo"
+    },
+    {
+      "id": 5,
+      "titulo": "Blanqueamiento dental con descuento",
+      "descripcion": "Aprovecha un 15% de descuento en blanqueamiento dental durante todo el mes.",
+      "categoria": "Promoción",
+      "fecha_publicacion": "2025-11-06",
+      "fecha_expiracion": "2025-11-30",
+      "userId": 101,
+      "imagen": "/images/blanqueamiento.jpg",
+      "estado": "activo"
+    }
+  ]
+}

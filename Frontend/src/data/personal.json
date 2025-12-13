@@ -1,0 +1,94 @@
+{
+  "personal": [
+    {
+      "id": 1,
+      "name": "Dr. González",
+      "specialty": "Odontólogo General",
+      "image": "/icons/prueba.jpeg",
+      "description": "Especialista en odontología general con más de 10 años de experiencia",
+      "certifications": [
+        { "name": "Endodoncia", "color": "blue" },
+        { "name": "Periodoncia", "color": "green" },
+        { "name": "Odontología Preventiva", "color": "teal" }
+      ],
+      "experience": "10+ años",
+      "education": "Universidad Nacional de Odontología",
+      "languages": ["Español", "Inglés"]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Martínez",
+      "specialty": "Ortodoncista",
+      "image": "/icons/prueba.jpeg",
+      "description": "Especialista en ortodoncia y estética dental con enfoque en tratamientos integrales",
+      "certifications": [
+        { "name": "Ortodoncia", "color": "purple" },
+        { "name": "Estética Dental", "color": "pink" },
+        { "name": "Invisalign", "color": "indigo" }
+      ],
+      "experience": "8+ años",
+      "education": "Universidad de Ciencias Médicas",
+      "languages": ["Español", "Inglés", "Portugués"]
+    },
+    {
+      "id": 3,
+      "name": "Dr. Valle",
+      "specialty": "Cirujano Oral",
+      "image": "/icons/prueba.jpeg",
+      "description": "Cirujano oral y maxilofacial especializado en implantes y cirugías complejas",
+      "certifications": [
+        { "name": "Cirugía Oral", "color": "red" },
+        { "name": "Implantes Dentales", "color": "orange" },
+        { "name": "Cirugía Maxilofacial", "color": "deep-orange" }
+      ],
+      "experience": "12+ años",
+      "education": "Universidad Internacional de Medicina",
+      "languages": ["Español", "Inglés", "Francés"]
+    },
+    {
+      "id": 4,
+      "name": "Dra. Rodríguez",
+      "specialty": "Endodoncista",
+      "image": "/icons/prueba.jpeg",
+      "description": "Especialista en endodoncia y tratamientos de conducto con tecnología de vanguardia",
+      "certifications": [
+        { "name": "Endodoncia", "color": "blue" },
+        { "name": "Microscopía Dental", "color": "cyan" },
+        { "name": "Odontología Restaurativa", "color": "light-blue" }
+      ],
+      "experience": "7+ años",
+      "education": "Universidad de Odontología Avanzada",
+      "languages": ["Español", "Inglés"]
+    },
+    {
+      "id": 5,
+      "name": "Dra. López",
+      "specialty": "Periodoncista",
+      "image": "/icons/prueba.jpeg",
+      "description": "Especialista en periodoncia y salud de las encías con enfoque en tratamientos mínimamente invasivos",
+      "certifications": [
+        { "name": "Periodoncia", "color": "green" },
+        { "name": "Cirugía Plástica Periodontal", "color": "light-green" },
+        { "name": "Implantes Periodontales", "color": "lime" }
+      ],
+      "experience": "9+ años",
+      "education": "Universidad de Ciencias de la Salud",
+      "languages": ["Español", "Inglés", "Italiano"]
+    },
+    {
+      "id": 6,
+      "name": "Dr. Herrera",
+      "specialty": "Odontopediatra",
+      "image": "/icons/prueba.jpeg",
+      "description": "Especialista en odontología infantil con enfoque en tratamientos para niños y adolescentes",
+      "certifications": [
+        { "name": "Odontopediatría", "color": "amber" },
+        { "name": "Ortodoncia Interceptiva", "color": "yellow" },
+        { "name": "Sedación Consciente", "color": "orange" }
+      ],
+      "experience": "6+ años",
+      "education": "Universidad de Odontología Pediátrica",
+      "languages": ["Español", "Inglés"]
+    }
+  ]
+}

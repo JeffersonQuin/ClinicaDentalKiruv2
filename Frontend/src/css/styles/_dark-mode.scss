@@ -1,0 +1,28 @@
+/* ========================================
+   VARIABLES MODO OSCURO
+   ========================================
+   Override de variables para el tema oscuro.
+   Se activa con la clase .body--dark
+   ======================================== */
+
+.body--dark {
+  --bg-primary: #2a2a2a;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-tertiary: #cccccc;
+  --text-muted: #9ca3af;
+  --border-light: #404040;
+  --border-medium: #4a4a4a;
+  --border-dark: #555555;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.6);
+  --success-light: #1e3a1e;
+  --error-light: #3a1e1e;
+  --warning-light: #3a2e1e;
+  --info-light: #1e2a3a;
+}
+

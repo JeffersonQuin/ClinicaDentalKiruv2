@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q001",
+    "title": "¿Cuáles son los horarios de atención?",
+    "snippet": "Horarios generales de atención y emergencias.",
+    "answer": "<p>Atención: Lunes a Viernes 08:00 - 18:00. Emergencias 24/7 en el área A.</p>",
+    "tags": ["horarios", "general"],
+    "confidential": false,
+    "lastUpdated": "2025-09-15"
+  },
+  {
+    "id": "q002",
+    "title": "¿Cómo agendo una cita?",
+    "snippet": "Pasos para agendar cita presencial o por teléfono.",
+    "answer": "<ol><li>Llamar al 123-456</li><li>Registrar datos</li><li>Confirmar horario</li></ol>",
+    "tags": ["citas", "procedimiento"],
+    "confidential": false,
+    "lastUpdated": "2025-07-01"
+  },
+  {
+    "id": "q003",
+    "title": "¿Dónde está ubicada la clínica?",
+    "snippet": "Dirección principal de la clínica.",
+    "answer": "<p>Calle Salud #123, Zona Central, Ciudad.</p>",
+    "tags": ["ubicación", "general"],
+    "confidential": false,
+    "lastUpdated": "2025-03-20"
+  },
+  {
+    "id": "q004",
+    "title": "¿Aceptan seguros médicos?",
+    "snippet": "Información sobre convenios con seguros.",
+    "answer": "<p>Sí, aceptamos los seguros: SeguroVida, MedSalud y ProtecPlus.</p>",
+    "tags": ["seguros", "pago"],
+    "confidential": false,
+    "lastUpdated": "2025-05-10"
+  },
+  {
+    "id": "q005",
+    "title": "¿Qué especialidades ofrecen?",
+    "snippet": "Lista de especialidades médicas disponibles.",
+    "answer": "<ul><li>Odontología</li><li>Pediatría</li><li>Cardiología</li><li>Dermatología</li></ul>",
+    "tags": ["especialidades", "servicios"],
+    "confidential": false,
+    "lastUpdated": "2025-06-01"
+  },
+  {
+    "id": "q006",
+    "title": "¿Cuál es el costo de una consulta general?",
+    "snippet": "Tarifas y formas de pago para consulta general.",
+    "answer": "<p>Consulta general: Bs. 150. Aceptamos efectivo, tarjeta y transferencia.</p>",
+    "tags": ["costos", "pago"],
+    "confidential": false,
+    "lastUpdated": "2025-08-01"
+  },
+  {
+    "id": "q007",
+    "title": "¿Cómo puedo obtener mis resultados de laboratorio?",
+    "snippet": "Procedimiento para recoger o ver resultados.",
+    "answer": "<p>Los resultados están disponibles en 48 horas. Se pueden recoger en recepción o recibir por correo electrónico si autorizas.</p>",
+    "tags": ["laboratorio", "procedimiento"],
+    "confidential": false,
+    "lastUpdated": "2025-04-12"
+  },
+  {
+    "id": "q008",
+    "title": "¿Tienen atención pediátrica?",
+    "snippet": "Servicios para pacientes pediátricos.",
+    "answer": "<p>Sí, contamos con pediatría de lunes a viernes y guardia en fines de semana para emergencias pediátricas.</p>",
+    "tags": ["pediatría", "servicios"],
+    "confidential": false,
+    "lastUpdated": "2025-02-20"
+  },
+  {
+    "id": "q009",
+    "title": "¿Cuál es la política de cancelación de citas?",
+    "snippet": "Reglas y plazos para cancelar sin costo.",
+    "answer": "<p>Cancelaciones hasta 24 horas antes sin cargo. Fuera de ese plazo se cobra 50% del valor de la consulta.</p>",
+    "tags": ["citas", "política"],
+    "confidential": false,
+    "lastUpdated": "2025-01-30"
+  },
+  {
+    "id": "q010",
+    "title": "¿Ofrecen servicio de emergencia odontológica?",
+    "snippet": "Disponibilidad de urgencias dentales.",
+    "answer": "<p>Sí. Servicio de emergencia odontológica 24/7 en el área de urgencias dentales.</p>",
+    "tags": ["odontología", "emergencias"],
+    "confidential": false,
+    "lastUpdated": "2025-09-01"
+  }
+]

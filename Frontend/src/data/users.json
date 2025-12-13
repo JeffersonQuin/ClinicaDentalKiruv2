@@ -1,0 +1,131 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "maria.gonzalez",
+      "password": "pass123",
+      "email": "maria.gonzalez@example.com",
+      "type": "user",
+      "state": "active",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 2,
+      "username": "carlos.rodriguez",
+      "password": "pass123",
+      "email": "carlos.rodriguez@example.com",
+      "type": "user",
+      "state": "active",
+      "avatar": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+      "id": 3,
+      "username": "ana.martinez",
+      "password": "pass123",
+      "email": "ana.martinez@example.com",
+      "type": "user",
+      "state": "inactive",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+      "id": 4,
+      "username": "pedro.sanchez",
+      "password": "pass123",
+      "email": "pedro.sanchez@example.com",
+      "type": "user",
+      "state": "active",
+      "avatar": "https://i.pravatar.cc/150?img=4"
+    },
+    {
+      "id": 5,
+      "username": "luisa.fernandez",
+      "password": "pass123",
+      "email": "luisa.fernandez@example.com",
+      "type": "user",
+      "state": "active",
+      "avatar": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+      "id": 6,
+      "username": "roberto.jimenez",
+      "password": "pass123",
+      "email": "roberto.jimenez@example.com",
+      "type": "user",
+      "state": "active"
+    },
+    {
+      "id": 7,
+      "username": "carmen.lopez",
+      "password": "pass123",
+      "email": "carmen.lopez@example.com",
+      "type": "user",
+      "state": "inactive"
+    },
+    {
+      "id": 8,
+      "username": "jose.herrera",
+      "password": "pass123",
+      "email": "jose.herrera@example.com",
+      "type": "user",
+      "state": "active"
+    },
+    {
+      "id": 9,
+      "username": "isabel.torres",
+      "password": "pass123",
+      "email": "isabel.torres@example.com",
+      "type": "user",
+      "state": "active"
+    },
+    {
+      "id": 10,
+      "username": "miguel.vargas",
+      "password": "pass123",
+      "email": "miguel.vargas@example.com",
+      "type": "user",
+      "state": "active"
+    },
+    {
+      "id": 11,
+      "username": "patricia.mendoza",
+      "password": "pass123",
+      "email": "patricia.mendoza@example.com",
+      "type": "user",
+      "state": "inactive"
+    },
+    {
+      "id": 12,
+      "username": "francisco.ruiz",
+      "password": "pass123",
+      "email": "francisco.ruiz@example.com",
+      "type": "user",
+      "state": "active"
+    },
+    {
+      "id": 13,
+      "username": "gabriela.castro",
+      "password": "pass123",
+      "email": "gabriela.castro@example.com",
+      "type": "user",
+      "state": "active"
+    },
+    {
+      "id": 14,
+      "username": "andres.morales",
+      "password": "pass123",
+      "email": "andres.morales@example.com",
+      "type": "user",
+      "state": "active"
+    },
+    {
+      "id": 15,
+      "username": "valentina.silva",
+      "password": "pass123",
+      "email": "valentina.silva@example.com",
+      "type": "user",
+      "state": "inactive"
+    }
+  ]
+}
+
+

@@ -1,0 +1,120 @@
+/* ========================================
+   PÁGINA LOGIN - INICIO DE SESIÓN
+   ========================================
+   Estilos para la página de login con panel 
+   de bienvenida y formulario de autenticación
+   ======================================== */
+
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
+}
+
+.login-card {
+  max-width: 900px;
+  width: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.login-form-section {
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.body--dark .login-form-section {
+  background: var(--bg-secondary);
+}
+
+.form-input {
+  :deep(.q-field__control) {
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    
+    &:hover {
+      border-color: var(--primary-color);
+    }
+    
+    &:focus-within {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px var(--primary-color-light);
+    }
+  }
+}
+
+.welcome-panel {
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-panel::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: pulse 15s ease-in-out infinite;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 1;
+  max-width: 350px;
+}
+
+.welcome-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+.welcome-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.welcome-subtitle {
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-normal);
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+  }
+}
+
+.test-credentials {
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  border: 2px dashed var(--border-medium);
+}
+
+.body--dark .test-credentials {
+  background: var(--bg-tertiary);
+  border-color: var(--border-dark);
+}
+

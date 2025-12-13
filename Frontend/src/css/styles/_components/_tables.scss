@@ -1,0 +1,66 @@
+/* ========================================
+   TABLAS DE DATOS
+   ========================================
+   Estilos para tablas de datos (q-table)
+   ======================================== */
+
+.table-container {
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.data-table :deep(.q-table__top) {
+  padding: 0 0 var(--spacing-md) 0;
+  background: transparent;
+  border-bottom: none;
+}
+
+.data-table :deep(.q-table__title) {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.data-table :deep(.q-table thead tr th) {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: var(--spacing-md) var(--spacing-sm);
+  border-bottom: 2px solid var(--border-light);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.data-table :deep(.q-table tbody tr) {
+  transition: all var(--transition-fast);
+}
+
+.data-table :deep(.q-table tbody tr:hover) {
+  background: var(--bg-secondary);
+}
+
+.data-table :deep(.q-table tbody tr:nth-child(even)) {
+  background: var(--bg-tertiary);
+}
+
+.data-table :deep(.q-table tbody td) {
+  padding: var(--spacing-md) var(--spacing-sm);
+  border-bottom: 1px solid var(--border-light);
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.data-table :deep(.q-table__bottom) {
+  border-top: 2px solid var(--border-light);
+  padding-top: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  background: transparent;
+}
+

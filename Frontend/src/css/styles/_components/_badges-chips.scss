@@ -1,0 +1,70 @@
+/* ========================================
+   BADGES Y CHIPS
+   ========================================
+   Badges de estado y chips de tipo
+   ======================================== */
+
+.state-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.state-badge.state-active {
+  background: var(--success-light);
+  color: var(--success-dark);
+}
+
+.state-badge.state-inactive {
+  background: var(--error-light);
+  color: var(--error-dark);
+}
+
+.state-badge.state-pending {
+  background: var(--warning-light);
+  color: var(--warning-color);
+}
+
+.state-badge.state-default {
+  background: var(--gray-100);
+  color: var(--gray-500);
+}
+
+.type-chip {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.type-chip.type-admin {
+  background: #fce7f3;
+  color: #db2777;
+}
+
+.body--dark .type-chip.type-admin {
+  background: #3a1e2e;
+  color: #f9a8d4;
+}
+
+.type-chip.type-user {
+  background: var(--info-light);
+  color: var(--info-color);
+}
+
+.type-chip.type-moderator {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.body--dark .type-chip.type-moderator {
+  background: #2e1e3a;
+  color: #d8b4fe;
+}
+
+.type-chip.type-default {
+  background: var(--gray-100);
+  color: var(--gray-500);
+}
+

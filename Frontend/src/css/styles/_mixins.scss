@@ -1,0 +1,53 @@
+/* ========================================
+   MIXINS Y FUNCIONES
+   ========================================
+   Mixins reutilizables para estilos comunes
+   ======================================== */
+
+// Mixin para transiciones suaves
+@mixin transition($property: all, $duration: 0.3s, $easing: ease) {
+  transition: $property $duration $easing;
+}
+
+// Mixin para sombras
+@mixin shadow($level: md) {
+  @if $level == sm {
+    box-shadow: var(--shadow-sm);
+  } @else if $level == md {
+    box-shadow: var(--shadow-md);
+  } @else if $level == lg {
+    box-shadow: var(--shadow-lg);
+  } @else if $level == xl {
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+// Mixin para bordes redondeados
+@mixin radius($size: md) {
+  @if $size == sm {
+    border-radius: var(--radius-sm);
+  } @else if $size == md {
+    border-radius: var(--radius-md);
+  } @else if $size == lg {
+    border-radius: var(--radius-lg);
+  } @else if $size == xl {
+    border-radius: var(--radius-xl);
+  } @else if $size == full {
+    border-radius: var(--radius-full);
+  }
+}
+
+// Mixin para flexbox centrado
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Mixin para grid responsive
+@mixin grid-responsive($min-width: 300px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: var(--spacing-md);
+}
+

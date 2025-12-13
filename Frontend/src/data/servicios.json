@@ -1,0 +1,106 @@
+{
+  "servicios": [
+    {
+      "id": 1,
+      "title": "Curaciones Dentales",
+      "description": "Restauramos tus dientes afectados por caries con materiales de alta calidad, devolviéndoles su función y estética natural.",
+      "image": "/icons/curacion_dental.jpeg",
+      "category": "Restauración",
+      "categoryColor": "blue",
+      "duration": "30-60 min",
+      "price": "Desde $50",
+      "features": [
+        "Materiales de alta calidad",
+        "Técnica mínimamente invasiva",
+        "Resultado estético natural",
+        "Durabilidad garantizada"
+      ],
+      "icon": "healing"
+    },
+    {
+      "id": 2,
+      "title": "Exodoncias",
+      "description": "Extracciones dentales realizadas con el máximo cuidado y profesionalismo, minimizando molestias y asegurando una pronta recuperación.",
+      "image": "/icons/exodoncia.jpeg",
+      "category": "Cirugía",
+      "categoryColor": "red",
+      "duration": "20-45 min",
+      "price": "Desde $80",
+      "features": [
+        "Técnica avanzada",
+        "Mínimo dolor",
+        "Recuperación rápida",
+        "Seguimiento post-operatorio"
+      ],
+      "icon": "medical_services"
+    },
+    {
+      "id": 3,
+      "title": "Endodoncias",
+      "description": "Tratamiento de conducto para salvar dientes con infecciones o daños severos en la pulpa, aliviando el dolor y preservando tu diente natural.",
+      "image": "/icons/endodoncia.jpeg",
+      "category": "Especializada",
+      "categoryColor": "purple",
+      "duration": "60-90 min",
+      "price": "Desde $120",
+      "features": [
+        "Tecnología de vanguardia",
+        "Eliminación completa del dolor",
+        "Preservación del diente natural",
+        "Técnica indolora"
+      ],
+      "icon": "biotech"
+    },
+    {
+      "id": 4,
+      "title": "Pernos Dentales",
+      "description": "Reforzamos dientes debilitados después de una endodoncia, proporcionando una base sólida para futuras restauraciones como coronas.",
+      "image": "/icons/pernos_dentales.jpeg",
+      "category": "Restauración",
+      "categoryColor": "orange",
+      "duration": "45-60 min",
+      "price": "Desde $100",
+      "features": [
+        "Materiales biocompatibles",
+        "Resistencia máxima",
+        "Preparación para coronas",
+        "Durabilidad a largo plazo"
+      ],
+      "icon": "build"
+    },
+    {
+      "id": 5,
+      "title": "Limpieza Dental Profesional",
+      "description": "Eliminación de placa y sarro para prevenir enfermedades periodontales y mantener tus encías sanas y tu aliento fresco.",
+      "image": "/icons/limpieza_dental.jpeg",
+      "category": "Preventiva",
+      "categoryColor": "green",
+      "duration": "45-60 min",
+      "price": "Desde $40",
+      "features": [
+        "Eliminación de sarro",
+        "Pulido dental",
+        "Prevención de caries",
+        "Encías saludables"
+      ],
+      "icon": "cleaning_services"
+    },
+    {
+      "id": 6,
+      "title": "Ortodoncia",
+      "description": "Corrección de la posición de tus dientes y mandíbula para mejorar la estética y función de tu mordida con diferentes tipos de aparatos.",
+      "image": "/icons/ortodoncia.jpeg",
+      "category": "Estética",
+      "categoryColor": "pink",
+      "duration": "12-24 meses",
+      "price": "Desde $200/mes",
+      "features": [
+        "Brackets metálicos",
+        "Brackets estéticos",
+        "Invisalign",
+        "Ortodoncia lingual"
+      ],
+      "icon": "straighten"
+    }
+  ]
+}

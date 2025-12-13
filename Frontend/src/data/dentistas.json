@@ -1,0 +1,114 @@
+{
+  "dentistas": [
+    {
+      "id": 1,
+      "name": "Carlos",
+      "second_name": "Andrés",
+      "father_last_name": "García",
+      "mother_last_name": "Lopez",
+      "speciality": [1, 10],
+      "userId": 101,
+      "img": "https://picsum.photos/seed/dentist_1/600/400",
+      "state": "active"
+    },
+    {
+      "id": 2,
+      "name": "María",
+      "second_name": "Fernanda",
+      "father_last_name": "Pérez",
+      "mother_last_name": "Sánchez",
+      "speciality": [3],
+      "userId": 102,
+      "img": "https://picsum.photos/seed/dentist_2/600/400",
+      "state": "active"
+    },
+    {
+      "id": 3,
+      "name": "José",
+      "second_name": "Miguel",
+      "father_last_name": "Rodríguez",
+      "mother_last_name": "Vargas",
+      "speciality": [6, 9],
+      "userId": 103,
+      "img": "https://picsum.photos/seed/dentist_3/600/400",
+      "state": "active"
+    },
+    {
+      "id": 4,
+      "name": "Lucía",
+      "second_name": "Isabel",
+      "father_last_name": "Torres",
+      "mother_last_name": "Quispe",
+      "speciality": [5, 1],
+      "userId": 104,
+      "img": "https://picsum.photos/seed/dentist_4/600/400",
+      "state": "active"
+    },
+    {
+      "id": 5,
+      "name": "Andrés",
+      "second_name": "Raúl",
+      "father_last_name": "Castillo",
+      "mother_last_name": "Huanca",
+      "speciality": [7],
+      "userId": 105,
+      "img": "https://picsum.photos/seed/dentist_5/600/400",
+      "state": "active"
+    },
+    {
+      "id": 6,
+      "name": "Patricia",
+      "second_name": "Elena",
+      "father_last_name": "Mendoza",
+      "mother_last_name": "Flores",
+      "speciality": [8, 3],
+      "userId": 106,
+      "img": "https://picsum.photos/seed/dentist_6/600/400",
+      "state": "deleted"
+    },
+    {
+      "id": 7,
+      "name": "Raúl",
+      "second_name": "Esteban",
+      "father_last_name": "Salinas",
+      "mother_last_name": "Gómez",
+      "speciality": [4],
+      "userId": 107,
+      "img": "https://picsum.photos/seed/dentist_7/600/400",
+      "state": "active"
+    },
+    {
+      "id": 8,
+      "name": "Gabriela",
+      "second_name": "Noemí",
+      "father_last_name": "Ríos",
+      "mother_last_name": "Poma",
+      "speciality": [2, 6],
+      "userId": 108,
+      "img": "https://picsum.photos/seed/dentist_8/600/400",
+      "state": "active"
+    },
+    {
+      "id": 9,
+      "name": "Eduardo",
+      "second_name": "Luis",
+      "father_last_name": "Alvarez",
+      "mother_last_name": "Cruz",
+      "speciality": [9, 8],
+      "userId": 109,
+      "img": "https://picsum.photos/seed/dentist_9/600/400",
+      "state": "active"
+    },
+    {
+      "id": 10,
+      "name": "Sofía",
+      "second_name": "Marisol",
+      "father_last_name": "Núñez",
+      "mother_last_name": "Medina",
+      "speciality": [1, 5],
+      "userId": 110,
+      "img": "https://picsum.photos/seed/dentist_10/600/400",
+      "state": "active"
+    }
+  ]
+}

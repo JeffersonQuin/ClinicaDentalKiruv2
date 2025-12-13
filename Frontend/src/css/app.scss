@@ -1,0 +1,59 @@
+/* ========================================
+   KIRU ODONTOLOGÍA - ESTILOS GLOBALES
+   ========================================
+   Este archivo importa todos los estilos modulares de la aplicación.
+   ======================================== */
+
+// 1. Variables y configuración base
+@import './styles/_variables.scss';
+@import './styles/_dark-mode.scss';
+@import './styles/_mixins.scss';
+@import './styles/_animations.scss';
+@import './styles/_base.scss';
+
+// 2. Componentes
+@import './styles/_components/_buttons.scss';
+@import './styles/_components/_cards.scss';
+@import './styles/_components/_forms.scss';
+@import './styles/_components/_tables.scss';
+@import './styles/_components/_dialogs.scss';
+@import './styles/_components/_badges-chips.scss';
+@import './styles/_components/_pagination.scss';
+
+// 3. Layouts
+@import './styles/_layouts/_header.scss';
+@import './styles/_layouts/_footer.scss';
+@import './styles/_layouts/_dashboard.scss';
+@import './styles/_layouts/_page-container.scss';
+
+// 4. Páginas
+//4.1. Paginas públicas
+@import './styles/_pages/_home.scss';
+@import './styles/_pages/_about.scss';
+@import './styles/_pages/_services.scss';
+@import './styles/_pages/_branches.scss';
+@import './styles/_pages/_contact.scss';
+@import './styles/_pages/_login.scss';
+@import './styles/_pages/_admin.scss';
+@import './styles/_pages/_faq.scss';
+//4.2. Paginas de administración
+@import './styles/_pages/administration/_specialty.scss';
+@import './styles/_pages/administration/_dentist.scss';
+@import './styles/_pages/administration/_calendar_month.scss';
+@import './styles/_pages/administration/_calendar_week.scss';
+@import './styles/_pages/administration/_calendar_day.scss';
+@import './styles/_pages/administration/_branch.scss';
+@import './styles/_pages/administration/_announcement.scss';
+@import './styles/_pages/administration/_user.scss';
+@import './styles/_pages/administration/_patient.scss';
+@import './styles/_pages/administration/_purchase.scss';
+@import './styles/_pages/administration/_reserve.scss';
+@import './styles/_pages/administration/_stadistics.scss';
+@import './styles/_pages/administration/_odontogram.scss';
+@import './styles/_pages/administration/_quotes.scss';
+@import './styles/_pages/administration/_historyquotes.scss';
+@import './styles/_pages/administration/_servicio.scss';
+
+
+// 5. Responsive
+@import './styles/_responsive.scss';

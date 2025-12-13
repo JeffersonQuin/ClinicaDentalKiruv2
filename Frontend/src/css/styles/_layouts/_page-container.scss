@@ -1,0 +1,134 @@
+/* ========================================
+   PAGE CONTAINER
+   ========================================
+   Contenedores principales de páginas
+   ======================================== */
+
+.page-container {
+  padding: var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--bg-secondary);
+}
+
+.branch-page,
+.index-page,
+.services-page {
+  padding-bottom: 0;
+}
+
+/* Hero Sections */
+.hero-section,
+.hero-branch,
+.hero-anuncios,
+.hero-about,
+.hero-services {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+}
+
+.body--dark .hero-section,
+.body--dark .hero-branch,
+.body--dark .hero-anuncios,
+.body--dark .hero-about,
+.body--dark .hero-services {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.hero-image {
+  background: url('~assets/hero-image.jpg') no-repeat center center;
+  background-size: cover;
+  width: 450px;
+  height: 450px;
+  border-radius: 5%;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.floating-icon-1,
+.floating-icon-2 {
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-icon-1 {
+  top: 20px;
+  left: 20px;
+}
+
+.floating-icon-2 {
+  bottom: 30px;
+  right: 30px;
+  animation-direction: reverse;
+}
+
+/* Secciones adicionales */
+.anuncios-section,
+.services-grid-section,
+.questions-section,
+.cta-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+}
+
+.cta-image {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Estado vacío */
+.no-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-tertiary);
+}
+
+.no-data-icon {
+  font-size: 64px;
+  color: var(--gray-300);
+  margin-bottom: var(--spacing-md);
+}
+
+.no-data-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.no-data-subtext {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.no-results {
+  margin-top: 3rem;
+  opacity: 0.8;
+}
+

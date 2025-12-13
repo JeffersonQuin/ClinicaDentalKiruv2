@@ -1,0 +1,23 @@
+/* ========================================
+   ESTILOS BASE Y RESET
+   ========================================
+   Estilos base para páginas y contenedores principales
+   ======================================== */
+.main-content {
+  min-height: calc(100vh - 200px); 
+  padding-bottom: 20px;
+}
+.page-container {
+  padding: var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--bg-secondary);
+}
+
+.branch-page,
+.index-page,
+.services-page {
+  padding-bottom: 0;
+}
+
